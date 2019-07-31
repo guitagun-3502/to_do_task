@@ -1,0 +1,161 @@
+*{
+	font-family:Lobster, cursive;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+header{
+	width: 100%;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(../img/background.jpg) repeat-x;
+}
+
+.header-bar{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+}
+
+.header-bar>a{
+	margin:150px;
+	padding:60px 140px 60px 140px;
+	background:#d1c5c5;
+	font-size: 32px;
+	border-radius: 30px;
+	box-shadow: 1px 1px 1px black;
+	border: 2px outset gray;
+	cursor: pointer;
+}
+
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 50px;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    top: 20px;
+    width: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    box-shadow: 1px 1px 3px #000;
+}
+ 
+.close:hover { background: #00d9ff; }
+
+a{
+	text-decoration: none;
+	color:black;
+}
+
+.modal{
+	width:40%;
+	height: 50%;
+	background:white;
+	border-radius: 24px 0 24px 0;
+	box-shadow: 2px 2px 2px black;
+	border: 5px outset gray;
+}
+
+.modalDialog>div{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.registration-login{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.login-menu{
+	width: 100%;
+	height: 20%;
+	background: #00d9ff;
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 28px;
+	border-radius: 18px 0 0 0;
+}
+
+.login-content{
+	width: 35%;
+	height: 80%;
+	display:flex;
+	flex-direction: column;
+	font-size: 24px;
+}
+
+.login-content>span{
+	margin-top: 40px;
+}
+
+#login,#password{
+	width: 80%;
+	height: 30px;
+	margin-top:10px;
+	font-size: 20px;
+}
+
+.register{
+	height: 8%;
+	width: 30%;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: red;
+	padding: 20px 40px 20px 40px;
+	font-size: 24px;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+.password-bar>img{
+	width: 40px;
+	height: 40px;
+}
+
+.password-bar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
